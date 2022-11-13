@@ -1,3 +1,8 @@
+'''
+Dette er et program som skal imitere lanternene på en båt. Når basen helner mot styrbord (høyre) side så lyser lanternen grønt. Når basen helner mot babor (venstre) side så lyser lanternen rødt.
+
+'''
+
 from spike import PrimeHub, LightMatrix, Button, StatusLight, ForceSensor, MotionSensor, Speaker, ColorSensor, App, DistanceSensor, Motor, MotorPair
 from spike.control import wait_for_seconds, wait_until, Timer
 from math import *
