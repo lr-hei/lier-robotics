@@ -1,0 +1,17 @@
+from spike import PrimeHub, LightMatrix, Button, StatusLight, ForceSensor, MotionSensor, Speaker, ColorSensor, App, DistanceSensor, Motor, MotorPair
+from spike.control import wait_for_seconds, wait_until, Timer
+from math import *
+
+hub = PrimeHub()
+
+while True:
+    if hub.motion_sensor.get_roll_angle() > 5:
+        hub.status_light.on('green')
+    
+    elif hub.motion_sensor.get_roll_angle() < -5:#for å gjøre en test om noe er likt bruk !=
+        hub.status_light.on('red')
+
+    else:
+        hub.status_light.on('yellow')
+
+    #hub.light_matrix.write(hub.motion_sensor.get_roll_angle())
