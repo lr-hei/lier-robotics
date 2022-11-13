@@ -25,3 +25,5 @@ while True: # Vis rød eller grønn lanternelys basert på helningen til basen
     
     if hub.left_button.is_pressed(): # Avslutt programmet ved å trykke på venstre knapp på basen
         break
+
+hub.status_light.off() # Skru av statuslyset når knappen for å avslutte programmet er trykket
